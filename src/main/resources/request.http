@@ -1,0 +1,45 @@
+POST http://localhost:8081/api/user/create
+Content-Type: application/json
+
+{ "username":"ahmedkhalef",
+"password": "84Ttdpnend#",
+"confirmPassword": "84Ttdpnend#"
+}
+###
+
+POST http://localhost:8081/login
+Content-Type: application/json
+
+{ "username":"ahmedkhalef",
+"password": "84Ttdpnend"
+}
+
+###
+
+GET http://localhost:8081/api/user/khalil
+
+###
+
+POST http://localhost:8081/api/cart/addToCart
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhaG1lZGtoYWxlZiIsImV4cCI6MTYyMzcwODk2Mn0.I0YA54aO3AQ3d_mQwA2_3pZkJcYVfxh68jeY8_epej5PNlgnkPbdY50KvYrYKSwNXakzZ05zZqbec3ldXWdSyg
+
+{"username":"ahmedkhalef", "itemId": 1, "quantity": 1}
+
+###
+
+POST http://localhost:8081/api/order/submit/example
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhaG1lZGtoYWxlZiIsImV4cCI6MTYyMzcwODk2Mn0.I0YA54aO3AQ3d_mQwA2_3pZkJcYVfxh68jeY8_epej5PNlgnkPbdY50KvYrYKSwNXakzZ05zZqbec3ldXWdSyg
+
+
+###
+
+GET http://localhost:8081/api/order/history/khalil
+
+###
+
+GET http://localhost:8081/api/item/1
+
+###
+GET http://localhost:8081/api/item/name/Round Widget
